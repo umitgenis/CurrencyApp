@@ -21,4 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('currency',[\App\Http\Controllers\CurrencyController::class,'getCurrency']);
+Route::get('/fetchCurrency',[\App\Http\Controllers\CurrencyController::class,'fetchCurrency']);
+Route::get('/getcurrency',[\App\Http\Controllers\CurrencyController::class,'getCurrency']);
